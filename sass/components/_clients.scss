@@ -1,15 +1,18 @@
 .clients {
   &__list {
     display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
   }
 
   &__item {
-    width: calc((100% - 150px) / 6);
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
   }
 
-  &__item:not(:last-child) {
-    margin-right: 30px;
-  }
+  // &__item:not(:last-child) {
+  //   margin-right: 30px;
+  // }
 
   &__link {
     display: flex;

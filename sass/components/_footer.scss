@@ -3,9 +3,9 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  &__container {
-    display: flex;
-  }
+  // &__container {
+  //   display: flex;
+  // }
 
   &__title {
     font-size: 14px;
@@ -15,34 +15,34 @@
     margin-bottom: 20px;
   }
 
-  &__left {
-    margin-right: 70px;
-  }
+  // &__left {
+  //   margin-right: 70px;
+  // }
 
-  &__center {
-    padding-top: 12px;
-  }
+  // &__center {
+  //   padding-top: 12px;
+  // }
 
   &__right {
     flex-grow: 1;
-    padding-top: 12px;
-    margin-left: 93px;
+    // padding-top: 12px;
+    // margin-left: 93px;
   }
 
-  &__wrapper {
-    display: flex;
-  }
+  // &__wrapper {
+  //   display: flex;
+  // }
 
   &__label {
-    display: flex;
+    // display: flex;
     flex-grow: 1;
     position: relative;
     flex-basis: auto;
   }
 
-  &__label:focus-within &__label-text {
-    transform: translateX(-79px);
-  }
+  // &__label:focus-within &__label-text {
+  //   transform: translateX(-79px);
+  // }
 
   &__label-text {
     position: absolute;

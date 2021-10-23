@@ -64,8 +64,10 @@
     <main>
       <!-- Герой -->
       <section class="hero">
-        <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="hero__btn" data-modal-open>Заказать услугу</button>
+        <div class="container">
+          <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+          <button type="button" class="hero__btn" data-modal-open>Заказать услугу</button>
+        </div>
       </section>
 
       <!-- Особенности -->
@@ -127,24 +129,49 @@
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="tasks__list">
             <li class="tasks__item">
-              <img src="./images/box1.jpg" alt="клацание по клавиатуре" width="370" height="294" />
+              <picture>
+                <source
+                  srcset="./images/tasks/img-1.webp 1x, ./images/tasks/img-1@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/tasks/img-1.jpg 1x, ./images/tasks/img-1@2x.jpg 2x"
+                  type="image/jpeg"
+                />
+                <img src="./images/tasks/img-1.jpg" alt="клацание по клавиатуре" />
+              </picture>
               <div class="tasks__subtext">
                 <p class="tasks__text">Десктопные приложения</p>
               </div>
             </li>
             <li class="tasks__item">
-              <img
-                src="./images/box2.jpg"
-                alt="установка тем на телефон"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/tasks/img-2.webp 1x, ./images/tasks/img-2@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/tasks/img-2.jpg 1x, ./images/tasks/img-2@2x.jpg 2x"
+                  type="image/jpeg"
+                />
+                <img src="./images/tasks/img-2.jpg" alt="установка тем на телефон" />
+              </picture>
               <div class="tasks__subtext">
                 <p class="tasks__text">Мобильные приложения</p>
               </div>
             </li>
             <li class="tasks__item">
-              <img src="./images/box3.jpg" alt="просмотр гаммы цветов" width="370" height="294" />
+              <picture>
+                <source
+                  srcset="./images/tasks/img-3.webp 1x, ./images/tasks/img-3@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/tasks/img-3.jpg 1x, ./images/tasks/img-3@2x.jpg 2x"
+                  type="image/jpeg"
+                />
+                <img src="./images/tasks/img-3.jpg" alt="просмотр гаммы цветов" />
+              </picture>
               <div class="tasks__subtext">
                 <p class="tasks__text">Дизайнерские решения</p>
               </div>
@@ -159,12 +186,39 @@
           <h2 class="title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__card">
-              <img
-                src="./images/img1.jpg"
-                alt="Игорь Демьяненко, главный дизайнер"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/team/img-1.webp 1x, ./images/team/img-1@2x.webp 2x"
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/team/img-1.img 1x, ./images/team/img-1@2x.img 2x"
+                  type="image/img"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/team/img-1t.webp 1x, ./images/team/img-1t@2x.webp 2x"
+                  type="image/webp"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/team/img-1t.img 1x, ./images/team/img-1t@2x.img 2x"
+                  type="image/img"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/team/img-1c.webp 1x, ./images/team/img-1c@2x.webp 2x"
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team/img-1c.img 1x, ./images/team/img-1c@2x.img 2x"
+                  type="image/img"
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/team/img-1.img" alt="Игорь Демьяненко, главный дизайнер" />
+              </picture>
               <h3 class="team__name">Игорь Демьяненко</h3>
               <p class="team__position">Product Designer</p>
               <ul class="social-list">
@@ -199,12 +253,39 @@
               </ul>
             </li>
             <li class="team__card">
-              <img
-                src="./images/img2.jpg"
-                alt="Ольга Репина, фронтенд разработчик"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/team/img-2.webp 1x, ./images/team/img-2@2x.webp 2x"
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/team/img-2.img 1x, ./images/team/img-2@2x.img 2x"
+                  type="image/img"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/team/img-2t.webp 1x, ./images/team/img-2t@2x.webp 2x"
+                  type="image/webp"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/team/img-2t.img 1x, ./images/team/img-2t@2x.img 2x"
+                  type="image/img"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/team/img-2c.webp 1x, ./images/team/img-2c@2x.webp 2x"
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team/img-2c.img 1x, ./images/team/img-2c@2x.img 2x"
+                  type="image/img"
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/team/img-2.img" alt="Ольга Репина, фронтенд разработчик" />
+              </picture>
               <h3 class="team__name">Ольга Репина</h3>
               <p class="team__position">Frontend Developer</p>
               <ul class="social-list">
@@ -239,12 +320,39 @@
               </ul>
             </li>
             <li class="team__card">
-              <img
-                src="./images/img3.jpg"
-                alt="Николай Тарасов, отдел маркетинга"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/team/img-3.webp 1x, ./images/team/img-3@2x.webp 2x"
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/team/img-3.img 1x, ./images/team/img-3@2x.img 2x"
+                  type="image/img"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/team/img-3t.webp 1x, ./images/team/img-3t@2x.webp 2x"
+                  type="image/webp"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/team/img-3t.img 1x, ./images/team/img-3t@2x.img 2x"
+                  type="image/img"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/team/img-3c.webp 1x, ./images/team/img-3c@2x.webp 2x"
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team/img-3c.img 1x, ./images/team/img-3c@2x.img 2x"
+                  type="image/img"
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/team/img-3.img" alt="Николай Тарасов, отдел маркетинга" />
+              </picture>
               <h3 class="team__name">Николай Тарасов</h3>
               <p class="team__position">Marketing</p>
               <ul class="social-list">
@@ -279,8 +387,43 @@
               </ul>
             </li>
             <li class="team__card">
-              <img src="./images/img4.jpg" alt="Михаил Ермаков, дизайнер пользовательского
-              интерфейся" width="270" height="260"" />
+              <picture>
+                <source
+                  srcset="./images/team/img-4.webp 1x, ./images/team/img-4@2x.webp 2x"
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/team/img-4.img 1x, ./images/team/img-4@2x.img 2x"
+                  type="image/img"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/team/img-4t.webp 1x, ./images/team/img-4t@2x.webp 2x"
+                  type="image/webp"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/team/img-4t.img 1x, ./images/team/img-4t@2x.img 2x"
+                  type="image/img"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/team/img-4c.webp 1x, ./images/team/img-4c@2x.webp 2x"
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team/img-4c.img 1x, ./images/team/img-4c@2x.img 2x"
+                  type="image/img"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/team/img-4.img"
+                  alt="Михаил Ермаков, дизайнер пользовательского
+              интерфейся"
+                />
+              </picture>
               <h3 class="team__name">Михаил Ермаков</h3>
               <p class="team__position">UI Designer</p>
               <ul class="social-list">
@@ -480,12 +623,7 @@
           <h2 class="page-footer__title">Подпишитесь на рассылку</h2>
           <div class="page-footer__wrapper">
             <label class="page-footer__label">
-              <input
-                type="email"
-                class="page-footer__input"
-                name="email"
-                placeholder=" "
-              />
+              <input type="email" class="page-footer__input" name="email" placeholder=" " />
               <span class="page-footer__label-text">E-mail</span>
             </label>
             <button class="page-footer__btn" type="submit">

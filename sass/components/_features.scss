@@ -1,17 +1,17 @@
 .features {
   padding-bottom: 0;
 
-  &__list {
-    display: flex;
-  }
+  // &__list {
+  //   display: flex;
+  // }
 
-  &__item {
-    max-width: calc((100% - 90px) / 4);
-  }
+  // &__item {
+  //   max-width: calc((100% - 90px) / 4);
+  // }
 
-  &__item:not(:last-child) {
-    margin-right: 30px;
-  }
+  // &__item:not(:last-child) {
+  //   margin-right: 30px;
+  // }
 
   &__thumb {
     width: 100%;

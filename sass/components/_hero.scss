@@ -1,13 +1,35 @@
+@mixin bg-image($pass1, $pass2) {
+  background: linear-gradient(rgba(128, 131, 165, 0.4), rgba(47, 48, 58, 0.4)), (url($pass1));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background: linear-gradient(rgba(128, 131, 165, 0.4), rgba(47, 48, 58, 0.4)), url($pass2);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+  }
+}
+
 .hero {
   max-width: 1600px;
-  background: linear-gradient(rgba(128, 131, 165, 0.4), rgba(47, 48, 58, 0.4)),
-    url("../images/bgc.jpg");
   margin: 0 auto;
 
   text-align: center;
   letter-spacing: 0.06em;
   padding-top: 200px;
   padding-bottom: 200px;
+
+  @include bg-image("../images/header/header-img-m.jpg", "../images/header/header-img-m@2x.jpg");
+
+  @media (min-width: 480px) {
+    @include bg-image("../images/header/header-img-t.jpg", "../images/header/header-img-t@2x.jpg");
+  }
+
+  @media (min-width: 768px) {
+    @include bg-image("../images/header/header-img-c.jpg", "../images/header/header-img-c@2x.jpg");
+  }
 
   &__title {
     max-width: 630px;
@@ -16,8 +38,8 @@
     margin-bottom: 30px;
 
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     text-transform: uppercase;
     color: $contrast-color;
   }
