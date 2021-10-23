@@ -33,6 +33,14 @@ body {
   font-family: "Roboto", sans-serif;
   color: #757575;
   letter-spacing: 0.03em;
+  margin-top: 81px;
+}
+
+@media (max-width: 768px) {
+  body {
+    margin-top: 60px;
+    position: relative;
+  }
 }
 
 .container {

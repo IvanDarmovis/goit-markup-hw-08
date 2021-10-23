@@ -3,5 +3,9 @@ body {
   color: $main-text-color;
   letter-spacing: 0.03em;
 
-  // margin-top: 81px;
+  margin-top: 81px;
+  @media (max-width: 768px) {
+    margin-top: 60px;
+    position: relative;
+  }
 }
