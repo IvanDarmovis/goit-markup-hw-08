@@ -428,9 +428,15 @@ body {
   }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 767px) {
   .logo {
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 1199px) {
+  .logo {
+    margin-right: 88px;
   }
 }
 

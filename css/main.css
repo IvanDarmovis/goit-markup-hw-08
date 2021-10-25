@@ -428,9 +428,15 @@ body {
   }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 767px) {
   .logo {
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 1199px) {
+  .logo {
+    margin-right: 88px;
   }
 }
 
@@ -1058,13 +1064,20 @@ body {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: 528px;
+  max-width: 528px;
+  width: calc(100% - 30px);
   height: 581px;
-  padding: 40px;
+  padding: 38px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media (max-width: 1199px) {
+  .modal {
+    max-width: 450px;
+  }
 }
 
 .backdrop.is-hiden .modal {
@@ -1252,6 +1265,13 @@ body {
   font-size: 14px;
   line-height: 1.71;
   color: #757575;
+}
+
+@media (max-width: 1199px) {
+  .modal__policy-text {
+    font-size: 12px;
+    line-height: 1.16;
+  }
 }
 
 .modal__link:hover, .modal__link:focus {

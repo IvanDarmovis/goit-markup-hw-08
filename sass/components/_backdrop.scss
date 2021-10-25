@@ -25,9 +25,14 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  width: 528px;
+  max-width: 528px;
+  width: calc(100% - 30px);
   height: 581px;
-  padding: 40px;
+  padding: 38px;
+
+  @media (max-width: 1199px) {
+    max-width: 450px;
+  }
 
   background-color: $contrast-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -53,7 +58,8 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: $contrast-color;
 
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
@@ -194,6 +200,11 @@
     text-align: center;
     font-size: 14px;
     line-height: 1.71;
+
+    @media (max-width: 1199px) {
+      font-size: 12px;
+      line-height: 1.16;
+    }
 
     color: $main-text-color;
   }
