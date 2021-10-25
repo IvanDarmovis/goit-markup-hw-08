@@ -8,11 +8,15 @@
   &__item {
     width: calc((100% - 60px) / 2);
     margin: 15px;
-  }
 
-  // &__item:not(:last-child) {
-  //   margin-right: 30px;
-  // }
+    @media (min-width: 768px) {
+      width: calc((100% - 120px) / 3);
+    }
+
+    @media (min-width: 1200px) {
+      width: calc((100% - 180px) / 6);
+    }
+  }
 
   &__link {
     display: flex;

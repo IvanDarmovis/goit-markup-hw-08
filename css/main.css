@@ -102,18 +102,23 @@ body {
 }
 
 .page-header {
-  position: fixed;
   width: 100%;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  z-index: 5;
   background-color: #fff;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   border-bottom: 1px solid #ececec;
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: 5;
+  }
 }
 
 .page-header__container {
@@ -773,6 +778,18 @@ body {
 .clients__item {
   width: calc((100% - 60px) / 2);
   margin: 15px;
+}
+
+@media (min-width: 768px) {
+  .clients__item {
+    width: calc((100% - 120px) / 3);
+  }
+}
+
+@media (min-width: 1200px) {
+  .clients__item {
+    width: calc((100% - 180px) / 6);
+  }
 }
 
 .clients__link {
