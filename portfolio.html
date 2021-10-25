@@ -23,17 +23,21 @@
   <body>
     <!-- Шапка сайту -->
     <header class="page-header">
-      <div class="container page-header__container">
+    <div class="container page-header__container">
+      <a href="./index.html" class="logo logo--header">Web<span class="logo__label">Studio</span></a>
+      <button type="button" class="menu-btn">
+        <svg class="page-header__menu-icon js-open-menu" width="40" height="40">
+          <use href="./images/defs.svg#menu_40" class=""></use>
+        </svg>
+      </button>
+      <div class="wide-menu-container">
         <nav class="navigation">
-          <a href="./index.html" class="logo">Web<span class="logo__label">Studio</span></a>
           <ul class="navigation__list">
             <li class="navigation__item">
               <a href="./index.html" class="navigation__link">Студия</a>
             </li>
             <li class="navigation__item">
-              <a href="./portfolio.html" class="navigation__link navigation__link--current"
-                >Портфолио</a
-              >
+              <a href="./portfolio.html" class="navigation__link navigation__link--current">Портфолио</a>
             </li>
             <li class="navigation__item">
               <a href="" class="navigation__link">Контакты</a>
@@ -59,7 +63,44 @@
           </li>
         </ul>
       </div>
-    </header>
+      <div class="menu-container js-menu-container">
+        <button type="button" class="menu-btn js-close-menu">
+          <svg class="menu-container__menu-icon" width="40" height="40">
+            <use href="./images/defs.svg#close_40"></use>
+          </svg>
+        </button>
+        <ul class="menu-container__nav">
+          <li class="menu-container__item">
+            <a href="./index.html" class="menu-container__link">Студия</a>
+          </li>
+          <li class="menu-container__item">
+            <a href="./portfolio.html" class="menu-container__link">Портфолио</a>
+          </li>
+          <li class="menu-container__item">
+            <a href="" class="menu-container__link">Контакты</a>
+          </li>
+        </ul>
+        <ul class="menu-container__contacts">
+          <li class="menu-container__item">
+            <a href="tel:+380961111111" class="menu-container__tel">
+              +38 096 111 11 11
+            </a>
+          <li class="menu-container__item">
+            <a href="mailto:info@devstudio.com" class="menu-container__email">
+              info@devstudio.com
+            </a>
+          </li>
+          
+          </li>
+          <ul class="menu-container__social">
+            <li class="menu-container__social-item"><a href="" class="menu-container__social-link">Instagram</a></li>
+            <li class="menu-container__social-item"><a href="" class="menu-container__social-link">Twitter</a></li>
+            <li class="menu-container__social-item"><a href="" class="menu-container__social-link">Facebook</a></li>
+            <li class="menu-container__social-item"><a href="" class="menu-container__social-link">LinkedIn</a></li>
+          </ul>
+      </div>
+
+  </header>
 
     <!-- основний контент -->
     <main>

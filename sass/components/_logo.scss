@@ -5,6 +5,14 @@
   line-height: 1.19;
   color: $accent-color;
   margin-right: 93px;
+
+  @media (max-width: 767px) {
+    &--header {
+      position: absolute;
+      top: 16px;
+      left: 15px;
+    }
+  }
 }
 
 .logo__label {

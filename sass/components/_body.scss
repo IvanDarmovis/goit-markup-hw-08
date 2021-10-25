@@ -4,8 +4,7 @@ body {
   letter-spacing: 0.03em;
 
   margin-top: 81px;
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     margin-top: 60px;
-    position: relative;
   }
 }

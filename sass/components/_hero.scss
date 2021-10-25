@@ -23,11 +23,11 @@
 
   @include bg-image("../images/header/header-img-m.jpg", "../images/header/header-img-m@2x.jpg");
 
-  @media (min-width: 480px) {
+  @media (min-width: 768px) {
     @include bg-image("../images/header/header-img-t.jpg", "../images/header/header-img-t@2x.jpg");
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     @include bg-image("../images/header/header-img-c.jpg", "../images/header/header-img-c@2x.jpg");
   }
 
