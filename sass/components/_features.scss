@@ -1,17 +1,25 @@
 .features {
   padding-bottom: 0;
+  margin: -15px;
 
-  // &__list {
-  //   display: flex;
-  // }
+  &__list {
+    @media (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
 
-  // &__item {
-  //   max-width: calc((100% - 90px) / 4);
-  // }
+  &__item {
+    margin: 15px;
 
-  // &__item:not(:last-child) {
-  //   margin-right: 30px;
-  // }
+    @media (min-width: 768px) {
+      max-width: calc((100% - 60px) / 2);
+    }
+
+    @media (min-width: 1200px) {
+      max-width: calc((100% - 120px) / 4);
+    }
+  }
 
   &__thumb {
     width: 100%;
@@ -19,6 +27,7 @@
     padding: 25px 0;
     background-color: #f5f4fa;
     border-radius: 4px;
+    margin-bottom: 30px;
   }
 
   &__icon {
@@ -34,6 +43,10 @@
     text-transform: uppercase;
     font-size: 14px;
     color: $second-text-color;
+
+    @media (max-width: 767px) {
+      text-align: center;
+    }
   }
 
   &__text {

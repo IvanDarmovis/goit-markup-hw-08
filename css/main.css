@@ -82,8 +82,15 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .title {
@@ -95,12 +102,34 @@ body {
 }
 
 .page-header {
+  position: fixed;
   width: 100%;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 5;
   background-color: #fff;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   border-bottom: 1px solid #ececec;
+}
+
+.page-header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page-header .wide-menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
 }
 
 @media (max-width: 767px) {
@@ -109,15 +138,32 @@ body {
   }
 }
 
-.page-header__item:not(:last-child) {
-  margin-right: 50px;
+@media (min-width: 1200px) {
+  .page-header__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .page-header__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
   letter-spacing: 0.02em;
   color: #757575;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 1200px) {
+  .page-header__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .page-header__link:hover, .page-header__link:focus {
@@ -298,8 +344,30 @@ body {
   color: #757575;
 }
 
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: auto;
+}
+
+.navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigation__item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .navigation__link {
   display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   letter-spacing: 0.02em;
   color: #212121;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -313,6 +381,29 @@ body {
 .navigation__link--current {
   position: relative;
   color: #2196f3;
+}
+
+.navigation__link--current::after {
+  position: absolute;
+  bottom: -1px;
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  background-color: #2196f3;
+}
+
+.page-header__contacts {
+  margin-left: auto;
+}
+
+@media (min-width: 1200px) {
+  .page-header__contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .logo {
@@ -405,7 +496,7 @@ body {
 }
 
 .hero__title {
-  max-width: 630px;
+  max-width: 360px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -414,6 +505,14 @@ body {
   line-height: 1.62;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media (min-width: 1200px) {
+  .hero__title {
+    max-width: 630px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__btn {
@@ -438,6 +537,33 @@ body {
 
 .features {
   padding-bottom: 0;
+  margin: -15px;
+}
+
+@media (min-width: 768px) {
+  .features__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.features__item {
+  margin: 15px;
+}
+
+@media (min-width: 768px) {
+  .features__item {
+    max-width: calc((100% - 60px) / 2);
+  }
+}
+
+@media (min-width: 1200px) {
+  .features__item {
+    max-width: calc((100% - 120px) / 4);
+  }
 }
 
 .features__thumb {
@@ -446,6 +572,7 @@ body {
   padding: 25px 0;
   background-color: #f5f4fa;
   border-radius: 4px;
+  margin-bottom: 30px;
 }
 
 .features__icon {
@@ -461,6 +588,12 @@ body {
   text-transform: uppercase;
   font-size: 14px;
   color: #212121;
+}
+
+@media (max-width: 767px) {
+  .features__name {
+    text-align: center;
+  }
 }
 
 .features__text {
