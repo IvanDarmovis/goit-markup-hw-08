@@ -436,6 +436,12 @@ body {
   margin-right: 93px;
 }
 
+@media (max-width: 1199px) {
+  .logo {
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 767px) {
   .logo--header {
     position: absolute;
@@ -444,14 +450,8 @@ body {
   }
 }
 
-@media (max-width: 767px) {
-  .logo {
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 1199px) {
-  .logo {
+@media (max-width: 1200px) {
+  .logo--header {
     margin-right: 88px;
   }
 }

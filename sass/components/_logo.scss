@@ -6,20 +6,20 @@
   color: $accent-color;
   margin-right: 93px;
 
-  @media (max-width: 767px) {
-    &--header {
+  @media (max-width: 1199px) {
+    margin: 0 auto;
+  }
+
+  &--header {
+    @media (max-width: 767px) {
       position: absolute;
       top: 16px;
       left: 15px;
     }
-  }
 
-  @media (max-width: 767px) {
-    margin: 0 auto;
-  }
-
-  @media (max-width: 1199px) {
-    margin-right: 88px;
+    @media (max-width: 1200px) {
+      margin-right: 88px;
+    }
   }
 }
 
